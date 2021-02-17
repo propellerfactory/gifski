@@ -2,6 +2,8 @@ package gifski
 
 // #cgo linux CFLAGS: -I.
 // #cgo linux LDFLAGS: -L. -lgifski -lm -ldl
+// #cgo darwin CFLAGS: -I.
+// #cgo darwin LDFLAGS: -L. -lgifski_darwin -lm -ldl
 // #include <stdlib.h>
 // #include "gifski.h"
 // typedef int (*write_callback_fn)(size_t buffer_length, const uint8_t *buffer, void *user_data);
